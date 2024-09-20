@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+}
+
+//Test SCSS
+
+@import "./Colours.scss";
+
+> .Upload_containerr {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  > .col1 {
+    padding: 1em;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+
+    #col1_spn1 {
+      display: flex;
+      justify-content: end;
+      padding: 0;
+
+      > img {
+        position: relative;
+        left: 10px;
+        opacity: 0.75;
+        transform: rotate(10deg);
+        position: relative;
+        left: 15px;
+      }
+    }
+
+    #col1_spn2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  > .col2 {
+    border: 2px dashed $second;
+    padding: 2em;
+    width: 60%;
+
+    > .file_drop_box {
+      border: 1px solid green;
+      padding: 4em;
+      text-align: center;
+
+      > .upload-icon {
+        color: #e07a5f;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .upload-icon:hover {
+        color: #ca7b05;
+        cursor: pointer;
+      }
+
+      > .file_drop_box_child img {
+        cursor: pointer;
+      }
+
+      > .file_drop_box_child .text {
+        color: $second;
+        text-decoration: underline;
+      }
+    }
+  }
+  > .col3 {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 30vh;
+
+    #col3_spn1 {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+    }
+
+    #col3_spn2 {
+      align-items: center;
+      opacity: 0.75;
+    }
+  }
+}

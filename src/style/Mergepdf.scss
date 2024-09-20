@@ -1,0 +1,70 @@
+@import "./Colours.scss";
+
+.Merge_container {
+  padding: 1em;
+
+  > h1 {
+    text-align: center;
+    padding: 1em;
+  }
+}
+
+.MergePdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > .tool_section2 {
+    width: 40%;
+    padding: 1em;
+    border: 1px solid black;
+    height: 85vh;
+
+    > .tools_center {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px 200px 200px;
+      grid-gap: 10px;
+
+      > .tool_box {
+        background-color: rgb(175, 175, 175);
+        padding: 2em;
+        border-radius: 10px;
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .upload_container {
+    border: 2px dashed $second;
+    padding: 2em;
+    width: 45%;
+    height: 30vh;
+
+    > .file_drop_box {
+      border: 1px solid green;
+      padding: 3em;
+      text-align: center;
+
+      > .upload-icon {
+        color: #e07a5f;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .upload-icon:hover {
+        color: #ca7b05;
+        cursor: pointer;
+      }
+
+      > .file_drop_box_child img {
+        cursor: pointer;
+      }
+
+      > .file_drop_box_child .text {
+        color: $second;
+        text-decoration: underline;
+      }
+    }
+  }
+}

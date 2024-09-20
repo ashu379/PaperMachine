@@ -1,0 +1,53 @@
+@import "./Colours.scss";
+
+.index_container {
+  width: 100%;
+  height: auto;
+  padding-top: 2em;
+  padding: 2em;
+}
+
+.Section {
+  width: 100%;
+  margin: 1em;
+  background-color: #e4ebe9;
+  padding: 2em;
+  height: 30vh;
+
+  > span h3 {
+    color: $first;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  > span h2 {
+    margin: auto;
+    color: $first;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.8rem;
+
+    > p {
+      display: inline;
+      color: $second;
+      text-align: center;
+      border: 1px sol;
+    }
+  }
+}
+
+.home_bottom_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-gap: 20px;
+  z-index: 0;
+  padding: 2em;
+
+  > .box {
+    border: 1px solid red;
+    padding: 2em;
+  }
+}
