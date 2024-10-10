@@ -80,6 +80,49 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <div className="tab_footer">
+        <div className="tab_footer_col3 footer-col">
+          <div className="footer_form">
+            <form>
+              <label class="label">
+                <span class="icon">
+                  <FaUser size={20} />
+                </span>
+
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter your email"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="label">
+                <span class="icon">
+                  <IoMdMail size={20} />
+                </span>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter your email"
+                  autocomplete="off"
+                />
+              </label>
+              <label class="label">
+                <span class="icon">
+                  <TiMessages size={20} />
+                </span>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter your email"
+                  autocomplete="off"
+                />
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

@@ -1,13 +1,13 @@
 import React from "react";
 import Upload from "./Upload";
 
-const Split = () => {
+const AddPage = () => {
   return (
     <>
-      <h1 className="Common_header">Split</h1>
+      <h1 className="Common_header">Add Page</h1>
       <Upload />
     </>
   );
 };
 
-export default Split;
+export default AddPage;

@@ -7,14 +7,14 @@ const Tools = () => {
       <div className="tool_container">
         <div className="tool_section1">
           <button>
-            {" "}
-            <Link to={"/MergePdf"}>Merge PDF</Link>
-          </button>
-          <button>
             <Link to={"/Split"}>Split</Link>
           </button>
-          <button>Add Page</button>
-          <button>Add Text</button>
+          <button>
+            <Link to={"/AddPage"}>Add Page</Link>
+          </button>
+          <button>
+            <Link to={"/AddText"}>Add Text</Link>
+          </button>
         </div>
 
         <div className="tool_section2">
@@ -32,12 +32,6 @@ const Tools = () => {
 
             <div className="tool_box"></div>
             <div className="tool_box"></div>
-            <div className="tool_box"></div>
-
-            <div className="tool_box"></div>
-
-            <div className="tool_box"></div>
-            <div className="tool_box"></div>
           </div>
         </div>
 
@@ -47,9 +41,12 @@ const Tools = () => {
             <Link to={"/PDF_TO_WORD"}>PDF TO WORD</Link>
           </button>
 
-          <button>Protect PDF</button>
-          <button>Rotate PDF</button>
-          <button>PDF Compress</button>
+          <button>
+            <Link to={"/ProtectPdf"}>Protect PDF</Link>
+          </button>
+          <button>
+            <Link to={"/Rotate"}>Rotate PDF</Link>
+          </button>
         </div>
       </div>
     </>

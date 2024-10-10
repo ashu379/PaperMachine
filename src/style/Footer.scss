@@ -1,25 +1,45 @@
 @import "./Colours.scss";
 
+.tab_footer {
+  display: none;
+}
+
 .footer_container {
-  background-color: $second;
   display: flex;
+  background-color: $second;
   justify-content: space-between;
   width: 100%;
   padding: 10px 100px 10px 100px;
   color: $first;
   height: 40vh;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-around;
+  }
 }
 
 .footer_col1 {
   width: 40%;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 .footer_col2 {
   width: 20%;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 .footer_col3 {
   width: 40%;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 .footer-col {
@@ -48,7 +68,12 @@
 }
 
 .footer_col3 {
+  display: block;
   width: 36%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
   > .footer_form {
     align-items: center;
@@ -99,4 +124,29 @@
 input::placeholder {
   opacity: 0.5;
   color: rgb(255, 255, 255);
+}
+
+.tab_footer {
+  width: 100%;
+  background-color: $second;
+  padding: 2em;
+
+  > .tab_footer_col3 {
+    display: block;
+    width: 90%;
+    margin: auto;
+    color: #e9e9e9;
+    padding-top: 2em;
+    border-top: 1px solid white;
+
+    pad > .footer_form {
+      align-items: center;
+      width: 80%;
+      padding: 1em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }

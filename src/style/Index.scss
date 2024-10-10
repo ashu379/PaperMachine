@@ -1,6 +1,7 @@
 @import "./Colours.scss";
 
 .index_container {
+  display: block;
   width: 100%;
   height: auto;
   padding-top: 2em;
@@ -45,6 +46,11 @@
   grid-gap: 20px;
   z-index: 0;
   padding: 2em;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+  }
 
   > .box {
     border: 1px solid red;

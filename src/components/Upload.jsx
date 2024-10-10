@@ -17,7 +17,7 @@ const Upload = () => {
 
   return (
     <>
-      <div className="Upload_containerr">
+      <div className="Upload_container">
         <div className="col1">
           <span id="col1_spn1">
             <img src={pdf2} alt="not work" width={60} height={60} />

@@ -10,8 +10,9 @@
   > .tool_section1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     width: 20%;
+    margin-top: 2em;
 
     > button {
       padding: 1em;
@@ -20,6 +21,14 @@
       height: 8vh;
       background-color: $extra;
       cursor: pointer;
+      font-size: 1rem;
+      margin-top: 4em;
+      color: $first;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.85rem;
+        height: 6vh;
+      }
     }
   }
   > .tool_section2 {
@@ -32,6 +41,11 @@
       grid-template-rows: 240px 240px 240px 240px;
       grid-gap: 10px;
 
+      @media screen and (max-width: 968px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 240px 240px 240px 240px;
+      }
+
       > .tool_box {
         background-color: rgb(175, 175, 175);
         padding: 2em;
@@ -43,8 +57,9 @@
   > .tool_section3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     width: 20%;
+    margin-top: 2em;
 
     > button {
       padding: 1em;
@@ -53,6 +68,14 @@
       height: 8vh;
       background-color: $extra;
       cursor: pointer;
+      font-size: 1rem;
+      margin-top: 4em;
+      color: $first;
+
+      @media screen and (max-width: 768px) {
+        font-size: 0.85rem;
+        height: 6vh;
+      }
     }
   }
 }

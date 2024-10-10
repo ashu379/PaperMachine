@@ -1,13 +1,13 @@
 import React from "react";
 import Upload from "./Upload";
 
-const Split = () => {
+const Rotate = () => {
   return (
     <>
-      <h1 className="Common_header">Split</h1>
+      <h1 className="Common_header">Rotate PDF</h1>
       <Upload />
     </>
   );
 };
 
-export default Split;
+export default Rotate;

@@ -9,6 +9,13 @@
   }
 }
 
+.Common_header {
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .MergePdf {
   display: flex;
   justify-content: center;
@@ -35,36 +42,36 @@
     }
   }
 
-  .upload_container {
-    border: 2px dashed $second;
-    padding: 2em;
-    width: 45%;
-    height: 30vh;
+  // .upload_container {
+  //   border: 2px dashed $second;
+  //   padding: 2em;
+  //   width: 45%;
+  //   height: 30vh;
 
-    > .file_drop_box {
-      border: 1px solid green;
-      padding: 3em;
-      text-align: center;
+  //   > .file_drop_box {
+  //     border: 1px solid green;
+  //     padding: 3em;
+  //     text-align: center;
 
-      > .upload-icon {
-        color: #e07a5f;
-        cursor: pointer;
-        transition: color 0.3s ease;
-      }
+  //     > .upload-icon {
+  //       color: #e07a5f;
+  //       cursor: pointer;
+  //       transition: color 0.3s ease;
+  //     }
 
-      .upload-icon:hover {
-        color: #ca7b05;
-        cursor: pointer;
-      }
+  //     .upload-icon:hover {
+  //       color: #ca7b05;
+  //       cursor: pointer;
+  //     }
 
-      > .file_drop_box_child img {
-        cursor: pointer;
-      }
+  //     > .file_drop_box_child img {
+  //       cursor: pointer;
+  //     }
 
-      > .file_drop_box_child .text {
-        color: $second;
-        text-decoration: underline;
-      }
-    }
-  }
+  //     > .file_drop_box_child .text {
+  //       color: $second;
+  //       text-decoration: underline;
+  //     }
+  //   }
+  // }
 }

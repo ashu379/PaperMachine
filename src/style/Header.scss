@@ -1,32 +1,151 @@
 @import "./Colours.scss";
 
-nav {
+.mobile_header {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .desktop_header {
+    display: none;
+  }
+}
+
+.desktop_header nav {
+  display: inline-flex;
   background-color: $second;
   width: 100%;
   height: 10vh;
   color: $first;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    height: 12vh;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 11vh;
+  }
 
   > main a {
     margin: 1em;
     color: white;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .logo img {
     margin-left: 1em;
     width: 100px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
   }
 
-  .account_details a {
-    color: whitesmoke;
-    padding: 1em;
+  .account_details {
+    > a {
+      color: whitesmoke;
+      padding: 1em;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+    }
   }
 
   .account_details #login {
     background-color: black;
     padding: 8px;
     border-radius: 10px;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
   }
 }
+
+// tablet code here --->
+
+@media screen and (max-width: 480px) {
+  .tab_header {
+    display: none;
+  }
+}
+
+.tab_header nav {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  padding: 1em;
+
+  button {
+    border: 1px solid black;
+    padding: 0.65em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: $first;
+    color: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
+
+.tab_slider {
+  height: 100vh;
+  width: 30% !important;
+  border: 1px solid red;
+}
+
+// tablet code here  -->
+
+// mobile code here -->
+
+@media screen and (max-width: 640px) {
+  .account_details {
+    display: none;
+  }
+  .mobile_header {
+    display: flex;
+    background-color: $second;
+    justify-content: space-between;
+    align-items: center;
+
+    > nav {
+      padding: 1em;
+      float: right !important;
+
+      > button {
+        cursor: pointer;
+      }
+    }
+
+    > .logo img {
+      margin-left: 1em;
+      width: 100px;
+    }
+  }
+
+  .space {
+    height: 6vh;
+    width: 12%;
+  }
+}
+
+// mobile code here -->

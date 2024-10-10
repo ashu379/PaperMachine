@@ -1,12 +1,19 @@
 @import "./Colours.scss";
 
-> .Upload_containerr {
+.Upload_container {
   display: flex;
   justify-content: space-between;
   padding: 2em;
   align-items: center;
   padding-top: 4em;
   padding-bottom: 4em;
+  height: 40vh;
+  margin-bottom: 4em;
+
+  @media screen and (max-width: 768px) {
+    height: 30vh;
+    width: 100%;
+  }
 
   > .col1 {
     padding: 1em;
@@ -28,12 +35,22 @@
         transform: rotate(10deg);
         position: relative;
         left: 15px;
+
+        @media screen and (max-width: 768px) {
+          width: 50%;
+        }
       }
     }
 
     #col1_spn2 {
       display: flex;
       justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
   > .col2 {
@@ -41,10 +58,19 @@
     padding: 2em;
     width: 60%;
 
+    @media screen and (max-width: 768px) {
+      width: 70%;
+      height: 35vh;
+    }
+
     > .file_drop_box {
       border: 1px solid green;
       padding: 4em;
       text-align: center;
+
+      @media screen and (max-width: 768px) {
+        padding: 3em;
+      }
 
       > .upload-icon {
         color: #e07a5f;
@@ -79,11 +105,27 @@
       display: flex;
       padding: 0;
       justify-content: center;
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 100%;
+        }
+      }
     }
 
     #col3_spn2 {
       align-items: center;
       opacity: 0.75;
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 50%;
+        }
+      }
     }
   }
 }
+
+// this is tab code
+
+// this is tab code
